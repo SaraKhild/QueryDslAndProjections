@@ -63,10 +63,11 @@ public class IDepartmentRepositoryCustomImpl implements IDepartmentRepositoryCus
         var employeeEntityPath = QEmployee.employee;
         var query = new JPAQuery<>(this.entityManager);
         var result = query
-                .select(Projections.bean(DepartmentProjection.class, entityPath.departmentName.as("departmentName")))
+                .select(Projections.bean(DepartmentProjection.class, entityPath.departmentNo.as("departmentNo"),
+                        entityPath.departmentName.as("departmentName")))
                 .from(entityPath, employeeEntityPath)
                 .where(entityPath.departmentNo.eq(employeeEntityPath.department.departmentNo))
-                .groupBy(entityPath.departmentName)
+                .groupBy(entityPath.departmentName,entityPath.departmentNo)
                 .having(entityPath.count().goe(2))
                 .fetch();
 

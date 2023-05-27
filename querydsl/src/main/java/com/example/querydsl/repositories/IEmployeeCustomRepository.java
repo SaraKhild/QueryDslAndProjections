@@ -23,4 +23,6 @@ public interface IEmployeeCustomRepository {
 
     public List<Employee> getEmployeesWhoseUnderManagerName(String managerName);
 
+    public List<EmployeeProjection> countAllEmployeesUnderEachManager();
+
 }

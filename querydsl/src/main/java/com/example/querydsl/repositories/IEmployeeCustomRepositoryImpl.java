@@ -103,7 +103,6 @@ public class IEmployeeCustomRepositoryImpl implements IEmployeeCustomRepository 
                 var entityPath = QEmployee.employee;
                 var query = new JPAQuery<>(this.entityManager);
                 var subQuery = query.select(entityPath.salary.avg()).from(entityPath).fetchOne();
-                System.out.println("+++++++++++++++++++++++++++++++++" + subQuery);
                 var result = query
                                 .select(Projections.bean(EmployeeProjection.class,
                                                 entityPath.employeeName.as("employeeName"),
@@ -117,21 +116,36 @@ public class IEmployeeCustomRepositoryImpl implements IEmployeeCustomRepository 
         public List<Employee> getEmployeesWhoseUnderManagerName(String managerName) {
                 var entityPathManager = QEmployee.employee;
                 var entityPathEmployee = QEmployee.employee;
-                var query = new JPAQuery<>(this.entityManager);
+                var findIdManagerQuery = new JPAQuery<>(this.entityManager);
+                var findEmployeeQuery = new JPAQuery<>(this.entityManager); 
 
-                var subQuery = query.select(entityPathManager.employeeNo).from(entityPathManager)
+                var subQuery = findIdManagerQuery.select(entityPathManager.employeeNo).from(entityPathManager)
                                 .where(entityPathManager.employeeName.like("%" + managerName + "%")).fetchOne();
-
-                var result = query.select(entityPathEmployee).from(entityPathEmployee)
+          
+                var result = findEmployeeQuery.select(entityPathEmployee).from(entityPathEmployee)
                                 .where(entityPathEmployee.managerId.eq(subQuery));
-
-                // --------------------------another way----------------------------
-                // var result = query.select(entityPathEmployee)
-                // .from(entityPathEmployee,entityPathManager)
-                // .where(entityPathEmployee.managerId.eq(entityPathManager.employeeNo)
-                // .and(entityPathManager.employeeName.eq(managerName)));
 
                 return result.fetch();
         }
 
+        
+        @Override
+        public List<EmployeeProjection> countAllEmployeesUnderEachManager() {
+                var entityPathManager = QEmployee.employee;
+                var entityPathEmployee = QEmployee.employee;
+                var query = new JPAQuery<>(this.entityManager);
+                var result = query
+                                .select(Projections.bean(EmployeeProjection.class,
+                                                entityPathManager.employeeNo.as("employeeNo"),
+                                                entityPathManager.employeeName.as("employeeName"),
+                                                entityPathManager.jopName.as("jopName"),
+                                                entityPathManager.managerId.as("managerId"),
+                                                entityPathEmployee.count().as("count")))
+                                .from(entityPathEmployee)
+                                .join(entityPathManager)
+                                .on(entityPathEmployee.managerId.eq(entityPathManager.employeeNo))
+                                .groupBy(entityPathManager.employeeName, entityPathManager.employeeNo, entityPathManager.jopName)
+                                .fetch();     
+                return result;
+        }
 }

@@ -13,6 +13,7 @@ public class EmployeeProjection {
     private Date hireDate;
     private String city;
     private Double salary;
+    private Long count;
 
     public Integer getDepartmentNo() {
         return departmentNo;
@@ -84,6 +85,14 @@ public class EmployeeProjection {
 
     public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
+    }
+
+    public Long getCount() {
+        return count;
+    }
+
+    public void setCount(Long count) {
+        this.count = count;
     }
 
 }

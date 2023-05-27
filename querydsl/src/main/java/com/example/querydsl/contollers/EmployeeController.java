@@ -77,4 +77,8 @@ public class EmployeeController {
         return this.employeeServcie.getEmployeesWhoseUnderManagerName(managerName);
     }
 
+    @GetMapping("count-all-employees-under-each-manager")
+    public List<EmployeeProjection> countAllEmployeesUnderEachManager(){
+        return this.employeeServcie.countAllEmployeesUnderEachManager();
+    }
 }
