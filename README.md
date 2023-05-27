@@ -2,26 +2,26 @@
 <br>
 
 ## Overview
- In this project I built up using the concepts of QueryDSl and Procjection
+This project simplifies the concepts of QueryDSl and Procjection
  <br>
  
 ## Usages
-SpringBoot, QueryDSL, MySQL
-<br> 
+- SpringBoot
+-  QueryDSL
+-  MySQL
 
 ## Architecture of the Project
 
- ### 1-src folder
-    - controllers folder
-    - models folder
-    - services folder
-    - repositories
+ ### 1- src folders
  
-### 2-Maven pom.xml
+   - Controllers folder
+   - Models folder
+   - Services folder
+   - Repositories folder
+ 
+ ### 2-Maven pom.xml
 <br>
 
-  - MoiveInfo and MovieReview pom.xml:   
-    
 ```
  <dependencies>
 		<dependency>
@@ -96,19 +96,40 @@ spring.datasource.password=nFLhPPKOnkW1FA1e
 spring.jpa.show-sql=true
 
  ```
-### Run the program
+## • Queries Results of Employee
+
+<br>
+
+### This query 
+
+#### Code :space_invader:
+
+<br>
+
+```
+        @Override
+        public List<String> getUniqueJobName() {
+                var entityPath = QEmployee.employee;
+                var query = new JPAQuery<>(this.entityManager);
+                var result = query.select(entityPath.jopName).distinct().from(entityPath).fetch();
+                return result;
+
+        }
+```
 <br>
 
 
-  * 1- run MovieInfo and add information on postman
-  <img width="750" alt="movieInfo-get" src="https://user-images.githubusercontent.com/67427643/214279762-ddb80a1c-e63e-48eb-a4ef-c58a38fb6c2c.png">
+#### Result :star_struck:
 
-  * 2- run MovieReview and add information on postman
-  <img width="767" alt="movieReview-get" src="https://user-images.githubusercontent.com/67427643/214281321-1cf3f998-7250-420e-8747-20f348b633c1.png">
-  
-  * 3- run Movie to get information and review about movie by id on postman
-  <img width="761" alt="movie-get" src="https://user-images.githubusercontent.com/67427643/214282384-c41c1c48-8884-41b0-ab67-821cf07d2a74.png">
-  
+<br>
+
+<img width="1200" alt="" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/9716ee0e-b951-4621-b62f-112dfa0a55a9">
+
+
+---
+
+---
+---
 ---
 <br>
 
