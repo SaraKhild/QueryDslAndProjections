@@ -95,13 +95,38 @@ spring.jpa.show-sql=true
  ```
 ## • Queries Results of Employee
 
+##### :pencil2: This query 
+
+###### Code :computer:
+
 <br>
 
-#### :pencil2: This query 
+```
+        @Override
+        public Employee findByName(String employeeName) {
+                var entityPath = QEmployee.employee;
+                var query = new JPAQuery<>(this.entityManager);
+                var result = query.select(entityPath).from(entityPath).where(entityPath.employeeName.eq(employeeName))
+                                .fetchOne();
+                return result;
+        }
+```
 
 <br>
 
-#### Code :computer:
+###### Result :star_struck:
+
+<br>
+
+<img width="1200" alt="employeeWithName" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/84135306-7752-4e68-b951-a9d23d5737c0">
+
+---
+
+<br>
+
+##### :pencil2: This query 
+
+###### Code :computer:
 
 <br>
 
@@ -118,7 +143,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
 
@@ -128,13 +153,10 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### :pencil2: This query 
+##### :pencil2: This query 
 
-<br>
+###### Code :computer:
 
-#### Code :computer:
-
-<br>
 
 ```
         @Override
@@ -161,7 +183,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
 
@@ -176,11 +198,9 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### :pencil2: This query 
+##### :pencil2: This query 
 
-<br>
-
-#### Code :computer:
+###### Code :computer:
 
 <br>
 
@@ -197,7 +217,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
 
@@ -212,11 +232,9 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### :pencil2: This query
+##### :pencil2: This query
 
-<br>
-
-#### Code :computer:
+###### Code :computer:
 
 <br>
 
@@ -235,7 +253,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+##### Result :star_struck:
 
 <br>
 
@@ -250,11 +268,9 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### :pencil2: This query
+##### :pencil2: This query
 
-<br>
-
-#### Code :computer:
+###### Code :computer:
 
 <br>
 
@@ -281,19 +297,30 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
+
+<img width="1200" alt="emWithdepartment1" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/5e748fc1-2e8b-400c-9b00-dd6a4acd8128" hapace="20">
+
+<br>
+<br>
+
+<img width="1200" alt="emWithdepartment2" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/f53f750c-73f6-4815-87be-411b54090c72" hapace="20">
+
+<br>
+<br>
+
+<img width="1200" alt="emWithdepartment3" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/e1265e5a-9997-429b-8cf5-e93c37026c11">
+
 
 ---
 
 <br>
 
-#### :pencil2: This query
+##### :pencil2: This query
 
-<br>
-
-#### Code :computer:
+###### Code :computer:
 
 <br>
 
@@ -316,7 +343,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
 
@@ -331,11 +358,9 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### :pencil2: This query
+##### :pencil2: This query
 
-<br>
-
-#### Code :computer:
+###### Code :computer:
 
 <br>
 
@@ -360,7 +385,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
 
@@ -375,13 +400,43 @@ spring.jpa.show-sql=true
 
 ## • Queries Results of Department
 
+##### :pencil2: This query 
+
+###### Code :computer:
+
 <br>
 
-#### :pencil2: This query 
+```
+    @Override
+    public Department findByName(String departmentName) {
+
+        var entityPath = QDepartment.department;
+        var query = new JPAQuery<>(this.entityManager);
+        var result = query.select(entityPath).from(entityPath).where(entityPath.departmentName.eq(departmentName))
+                .fetchOne();
+
+        return result;
+
+    }
+```
 
 <br>
 
-#### Code :computer:
+###### Result :star_struck:
+
+<br>
+
+<img width="1200" alt="departmentbyname" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/43306b6a-62c4-4a6f-9dca-81c3ccf4a581">
+
+<br>
+
+--
+
+<br>
+
+##### :pencil2: This query 
+
+###### Code :computer:
 
 <br>
 
@@ -402,11 +457,11 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
 
-
+<img width="1200" alt="department4" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/593455fc-4a15-4cba-82c4-c3e53f311f27">
 
 <br>
 
@@ -414,11 +469,9 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### :pencil2: This query 
+##### :pencil2: This query 
 
-<br>
-
-#### Code :computer:
+###### Code :computer:
 
 <br>
 
@@ -438,11 +491,11 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
 
-
+<img width="1200" alt="department5" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c45f6969-e25b-4635-8f76-f6e3dadd4090">
 
 <br>
 
@@ -452,11 +505,9 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### :pencil2: This query 
+##### :pencil2: This query
 
-<br>
-
-#### Code :computer:
+###### Code :computer:
 
 <br>
 
@@ -482,11 +533,11 @@ spring.jpa.show-sql=true
 
 <br>
 
-#### Result :star_struck:
+###### Result :star_struck:
 
 <br>
 
-
+<img width="1200" alt="department6" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/b379916a-730f-4833-8ef9-f92d5ece839a">
 
 <br>
 
