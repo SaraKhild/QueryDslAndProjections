@@ -29,4 +29,6 @@ public interface IEmployeeService {
 
     public List<Employee> getEmployeesWhoseUnderManagerName(String managerName);
 
+    public List<EmployeeProjection> countAllEmployeesUnderEachManager();
+
 }

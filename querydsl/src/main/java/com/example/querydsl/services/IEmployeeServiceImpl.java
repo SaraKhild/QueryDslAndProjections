@@ -70,4 +70,9 @@ public class IEmployeeServiceImpl implements IEmployeeService {
         return this.employeeRepository.getEmployeesWhoseUnderManagerName(managerName);
     }
 
+    @Override
+    public List<EmployeeProjection> countAllEmployeesUnderEachManager() {
+        return this.employeeRepository.countAllEmployeesUnderEachManager();
+    }
+
 }
