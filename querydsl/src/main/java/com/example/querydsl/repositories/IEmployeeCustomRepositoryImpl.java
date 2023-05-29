@@ -92,6 +92,7 @@ public class IEmployeeCustomRepositoryImpl implements IEmployeeCustomRepository 
                                                 employeeEntityPath.employeeName.as("employeeName"),
                                                 departmentEntityPath.departmentNo.as("departmentNo"),
                                                 departmentEntityPath.departmentName.as("departmentName")))
+                                .from(employeeEntityPath)
                                 .innerJoin(departmentEntityPath)
                                 .on(employeeEntityPath.department.departmentNo.eq(departmentEntityPath.departmentNo));
 
@@ -117,18 +118,17 @@ public class IEmployeeCustomRepositoryImpl implements IEmployeeCustomRepository 
                 var entityPathManager = QEmployee.employee;
                 var entityPathEmployee = QEmployee.employee;
                 var findIdManagerQuery = new JPAQuery<>(this.entityManager);
-                var findEmployeeQuery = new JPAQuery<>(this.entityManager); 
+                var findEmployeeQuery = new JPAQuery<>(this.entityManager);
 
                 var subQuery = findIdManagerQuery.select(entityPathManager.employeeNo).from(entityPathManager)
                                 .where(entityPathManager.employeeName.like("%" + managerName + "%")).fetchOne();
-          
+
                 var result = findEmployeeQuery.select(entityPathEmployee).from(entityPathEmployee)
                                 .where(entityPathEmployee.managerId.eq(subQuery));
 
                 return result.fetch();
         }
 
-        
         @Override
         public List<EmployeeProjection> countAllEmployeesUnderEachManager() {
                 var entityPathManager = QEmployee.employee;
@@ -144,8 +144,9 @@ public class IEmployeeCustomRepositoryImpl implements IEmployeeCustomRepository 
                                 .from(entityPathEmployee)
                                 .join(entityPathManager)
                                 .on(entityPathEmployee.managerId.eq(entityPathManager.employeeNo))
-                                .groupBy(entityPathManager.employeeName, entityPathManager.employeeNo, entityPathManager.jopName)
-                                .fetch();     
+                                .groupBy(entityPathManager.employeeName, entityPathManager.employeeNo,
+                                                entityPathManager.jopName)
+                                .fetch();
                 return result;
         }
 }
