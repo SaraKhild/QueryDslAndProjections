@@ -95,7 +95,7 @@ spring.jpa.show-sql=true
  ```
 ## • Queries Results of Employee
 
-##### :pencil2: This query 
+##### :pencil2: `This query comparing employee name that is sending with employees name that is stored  and then fetches employee information` 
 
 ###### Code :computer:
 
@@ -124,7 +124,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query 
+##### :pencil2: `This query fetches jops name infrequently` 
 
 ###### Code :computer:
 
@@ -153,7 +153,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query 
+##### :pencil2: `This query multiply current salary of employee with 15% and show employees name and new salary increase`
 
 ###### Code :computer:
 
@@ -268,7 +268,8 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query
+##### :pencil2: `This query fetches employee number, employee name, department number, department name <br> where department number on employee equal department number on department` 
+
 
 ###### Code :computer:
 
@@ -318,7 +319,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query
+##### :pencil2: `This query calculates the employee average salary and then <br> fetches employee name and jop name which it's greater than this salary average`
 
 ###### Code :computer:
 
@@ -358,7 +359,55 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query
+##### :pencil2: this
+
+
+###### Code :computer:
+
+<br>
+
+```
+	@Override
+        public List<EmployeeProjection> countAllEmployeesUnderEachManager() {
+                var entityPathManager = QEmployee.employee;
+                var entityPathEmployee = QEmployee.employee;
+                var query = new JPAQuery<>(this.entityManager);
+                var result = query
+                                .select(Projections.bean(EmployeeProjection.class,
+                                                entityPathManager.employeeNo.as("employeeNo"),
+                                                entityPathManager.employeeName.as("employeeName"),
+                                                entityPathManager.jopName.as("jopName"),
+                                                entityPathManager.managerId.as("managerId"),
+                                                entityPathEmployee.count().as("count")))
+                                .from(entityPathEmployee)
+                                .join(entityPathManager)
+                                .on(entityPathEmployee.managerId.eq(entityPathManager.employeeNo))
+                                .groupBy(entityPathManager.employeeName, entityPathManager.employeeNo, entityPathManager.jopName)
+                                .fetch();     
+                return result;
+        }
+
+```
+
+<br>
+
+###### Result :star_struck:
+
+<br>
+
+<img width="1200" alt="count1" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/4881bdbb-2783-45bc-8a11-8e04699bfdee"
+     haspace="20">
+
+<br>
+<br>
+
+<img width="1200" alt="count3" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/409486d3-2e2f-4425-bf76-07a297573856">
+
+---
+
+<br>
+
+##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number that it's came with managerId and then show employees information who under this manager`
 
 ###### Code :computer:
 
@@ -389,18 +438,20 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="employee7" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/40415bde-cd29-4616-ba99-663e23822fd9">
+<img width="1200" alt="employee7" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/40415bde-cd29-4616-ba99-663e23822fd9" haspace="20">
+
+<br>
+<br>
+
+---
+---
+---
 
 <br>
 
-
----
----
----
-
 ## • Queries Results of Department
 
-##### :pencil2: This query 
+##### :pencil2: `This query comparing department name that is sending with department name that is stored and then fetches department information` 
 
 ###### Code :computer:
 
@@ -434,7 +485,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query 
+##### :pencil2: `This query take department number that is sending and filter then show department information except this department number`
 
 ###### Code :computer:
 
@@ -505,7 +556,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query
+##### :pencil2: `This query comparing depratment number of employee and department number of department  <br> and group same values then counting them where are grater than 2`
 
 ###### Code :computer:
 
