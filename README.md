@@ -2,8 +2,7 @@
 <br>
 
 ## Overview
-I code a project by using SpringBoot simplify QueryDSl  concept that is a framework which enables the construction of type-safe SQL,
-instead of writing queries as inline strings or externalizing them into XML files they are constructed via a fluent API, besid Procjection concept is defined as taking a vertical subset from the columns of a single table that retains the unique rows. This kind of SELECT statement returns some of the columns and all the rows in a table.
+I code a project by using SpringBoot simplify <strong> QueryDSl </strong> concept that is a framework which enables the construction of type-safe SQL, instead of writing queries as inline strings or externalizing them into XML files they are constructed via a fluent API, besid <strong> Procjection </strong> concept is defined as taking a vertical subset from the columns of a single table that retains the unique rows. This kind of SELECT statement returns some of the columns and all the rows in a table.
  <br>
  
 ## Usages
@@ -94,7 +93,8 @@ spring.datasource.password=nFLhPPKOnkW1FA1e
 spring.jpa.show-sql=true
 
  ```
-## • Queries Results of Employee
+ ## Let's Start :mechanical_arm:
+### • Queries Results of Employee
 
 ##### :pencil2: `This query comparing employee name that is sending with employees name that is stored and then fetches employee information` 
 
