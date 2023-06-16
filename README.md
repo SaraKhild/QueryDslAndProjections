@@ -2,7 +2,7 @@
 <br>
 
 ## Overview
-I code a project by using SpringBoot simplify <strong> QueryDSl </strong> concept that is a framework which enables the construction of type-safe SQL, instead of writing queries as inline strings or externalizing them into XML files they are constructed via a fluent API, besid <strong> Procjection </strong> concept is defined as taking a vertical subset from the columns of a single table that retains the unique rows. This kind of SELECT statement returns some of the columns and all the rows in a table.
+I coded a project by using SpringBoot simplify <strong> QueryDSl </strong> concept that is a framework which enables the construction of type-safe SQL, instead of writing queries as inline strings or externalizing them into XML files they are constructed via a fluent API, besid <strong> Procjection </strong> concept is defined as taking a vertical subset from the columns of a single table that retains the unique rows. This kind of SELECT statement returns some of the columns and all the rows in a table.
  <br>
  
 ## Usages
@@ -94,9 +94,9 @@ spring.jpa.show-sql=true
 
  ```
  ## Let's Start :mechanical_arm:
-### • Queries Results of Employee
+### • Query Results of Employee
 
-##### :pencil2: `This query comparing employee name that is sending with employees name that is stored and then fetches employee information` 
+##### :pencil2: `This query comparing employee name that is sending with employees name that is stored and then get employee information` 
 
 ###### Code :computer:
 
@@ -125,7 +125,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches jops name infrequently` 
+##### :pencil2: `This query get jops name infrequently` 
 
 ###### Code :computer:
 
@@ -199,7 +199,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query 
+##### :pencil2: This query comparing with department number that is sending and bring all departments except the department number *
 
 ###### Code :computer:
 
@@ -233,7 +233,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query
+##### :pencil2: This query to bring employees information whoe's been employed at less than requsting year *
 
 ###### Code :computer:
 
@@ -269,7 +269,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches employee number, employee name, department number, department name <br> where department number on employee equal department number on department` 
+##### :pencil2: `This query fetches employee number, employee name, department number, department name <br> where department number on employee equal department number on department` *
 
 
 ###### Code :computer:
@@ -360,7 +360,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: this
+##### :pencil2: this*
 
 
 ###### Code :computer:
@@ -408,7 +408,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number that it's came with managerId and then show employees information who under this manager`
+##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number which cames with managerId of employees and then show employees information under this manager`
 
 ###### Code :computer:
 
@@ -486,7 +486,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query take department number that is sending and filter then show department information except this department number`
+##### :pencil2: `This query takes department number that is sending then filter and show department information except this department number`
 
 ###### Code :computer:
 
