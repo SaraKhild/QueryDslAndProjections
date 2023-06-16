@@ -8,6 +8,7 @@ I coded a project by using SpringBoot simplify <strong> QueryDSl </strong> conce
 ## Usages
 - SpringBoot
 -  QueryDSL
+-  Procjection
 -  MySQL
 
 ## Architecture of the Project
@@ -96,7 +97,7 @@ spring.jpa.show-sql=true
  ## Let's Start :mechanical_arm:
 ### • Query Results of Employee
 
-##### :pencil2: `This query comparing employee name that is sending with employees name that is stored and then get employee information` 
+##### :pencil2: `This query comparing employee name that is sending with employees name that is stored in database and then get employee information.` 
 
 ###### Code :computer:
 
@@ -125,7 +126,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query get jops name infrequently` 
+##### :pencil2: `This query get jops name infrequently.` 
 
 ###### Code :computer:
 
@@ -154,7 +155,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query multiply current salary of employee with 15% and show employees name and new salary increase`
+##### :pencil2: `This query multiply current salary of employee with 15% and show employees name and new salary increase.`
 
 ###### Code :computer:
 
@@ -199,7 +200,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query comparing with department number that is sending and bring all departments except the department number *
+##### :pencil2: `This query get employees who's not belong to this department number by comparing with other departments number which is sending and bringing them all, except employees who's under this department number.`
 
 ###### Code :computer:
 
@@ -233,7 +234,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query to bring employees information whoe's been employed at less than requsting year *
+##### :pencil2: `This query brings employees information whoe's been hired before year that's senfing.`
 
 ###### Code :computer:
 
@@ -408,7 +409,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number which cames with managerId of employees and then show employees information under this manager`
+##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number which cames with managerId of employees and then show employees information under this manager`*
 
 ###### Code :computer:
 
@@ -452,7 +453,7 @@ spring.jpa.show-sql=true
 
 ## • Queries Results of Department
 
-##### :pencil2: `This query comparing department name that is sending with department name that is stored and then fetches department information` 
+##### :pencil2: `This query comparing department name that is sending with department name that is stored in database and then get department information.` 
 
 ###### Code :computer:
 
@@ -486,7 +487,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query takes department number that is sending then filter and show department information except this department number`
+##### :pencil2: `This query takes department number that is sending then filtering it with all department number that's stored in database and show department number, department name  except this department number.`
 
 ###### Code :computer:
 
@@ -521,7 +522,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query 
+##### :pencil2: This query *
 
 ###### Code :computer:
 
@@ -557,7 +558,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query comparing depratment number of employee and department number of department  <br> and group same values then counting them where are grater than 2`
+##### :pencil2: `This query get departments that have at less two employees by comparing depratment number of employee and department number of department  <br> and group same values then counting them where are grater than 2`
 
 ###### Code :computer:
 
