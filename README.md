@@ -270,7 +270,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches employee number, employee name, department number, department name <br> where department number on employee equal department number on department` *
+##### :pencil2: `This query fetches employee number, employee name, department number, department name <br> where department number on employee equal department number on department.`
 
 
 ###### Code :computer:
@@ -409,7 +409,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number which cames with managerId of employees and then show employees information under this manager`*
+##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number which cames with managerId of employees and then show employees information under this manager` 
 
 ###### Code :computer:
 
@@ -522,7 +522,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query *
+##### :pencil2: This query brings departments which have no employee hired yet, where to get department number of employee in employee table and filter the result if the values that are mentioned as part of the *
 
 ###### Code :computer:
 
@@ -558,7 +558,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query get departments that have at less two employees by comparing depratment number of employee and department number of department  <br> and group same values then counting them where are grater than 2`
+##### :pencil2: `This query gets departments which have at lest two employees, that compares department number that's in department table with department number of employee in employee table then arrange identical departments number and name, then count how many employee in this department which will be gereater than or equal two.`
 
 ###### Code :computer:
 
@@ -593,6 +593,7 @@ spring.jpa.show-sql=true
 <img width="1200" alt="department6" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/b379916a-730f-4833-8ef9-f92d5ece839a">
 
 <br>
+
 
 --
 
