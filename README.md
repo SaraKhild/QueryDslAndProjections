@@ -321,7 +321,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query calculates the employee average salary and then <br> fetches employee name and jop name which it's greater than this salary average`
+##### :pencil2: `This query calculates the employee average salary and then <br> fetches employee name and jop name which it's greater than this salary average.`
 
 ###### Code :computer:
 
@@ -361,7 +361,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: this query count every employees under each manager, where compare employee's manager id with employee number then arrange identical employee number and name without repetition, then show employee number, name, jop name, and how many employees under this manager.
+##### :pencil2: `This query count every employees under each manager, where compare employee's manager id with employee number then arrange identical employee number and name without repetition, then show employee number, name, jop name, and how many employees under this manager.`
 
 
 ###### Code :computer:
@@ -409,7 +409,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number which cames with managerId of employees and then show employees information under this manager` 
+##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number which cames with managerId of employees and then show employees information under this manager.` 
 
 ###### Code :computer:
 
@@ -451,7 +451,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-## • Queries Results of Department
+### • Query Results of Department
 
 ##### :pencil2: `This query comparing department name that is sending with department name that is stored in database and then get department information.` 
 
@@ -483,7 +483,7 @@ spring.jpa.show-sql=true
 
 <br>
 
---
+---
 
 <br>
 
@@ -518,7 +518,7 @@ spring.jpa.show-sql=true
 
 <br>
 
---
+---
 
 <br>
 
@@ -553,7 +553,7 @@ spring.jpa.show-sql=true
 
 <br>
 
---
+---
 
 <br>
 
@@ -596,7 +596,7 @@ spring.jpa.show-sql=true
 <br>
 
 
---
+---
 
 
 ### Good Luck <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"> 
