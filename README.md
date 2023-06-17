@@ -361,7 +361,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: this*
+##### :pencil2: this query count every employees under each manager, where compare employee's manager id with employee number then arrange identical employee number and name without repetition, then show employee number, name, jop name, and how many employees under this manager.
 
 
 ###### Code :computer:
@@ -487,7 +487,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query takes department number that is sending then filtering it with all department number that's stored in database and show department number, department name  except this department number.`
+##### :pencil2: `This query takes department number that is sending then filtering it with all department number that's stored in database and show department number, department name except this department number.`
 
 ###### Code :computer:
 
@@ -522,7 +522,8 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: This query brings departments which have no employee hired yet, where to get department number of employee in employee table and filter the result if the values that are mentioned as part of the *
+##### :pencil2: `This query brings departments which have no employee hired yet, where to get department number of employee in employee table and filter the result if the values that aren't mentioned as part of the department number of department table then get this department infomation.`
+
 
 ###### Code :computer:
 
