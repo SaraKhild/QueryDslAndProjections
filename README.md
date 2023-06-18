@@ -2,7 +2,7 @@
 <br>
 
 ## Overview
-I coded a project by using SpringBoot simplify <strong> QueryDSl </strong> concept that is a framework which enables the construction of type-safe SQL, instead of writing queries as inline strings or externalizing them into XML files they are constructed via a fluent API, besid <strong> Procjection </strong> concept is defined as taking a vertical subset from the columns of a single table that retains the unique rows. This kind of SELECT statement returns some of the columns and all the rows in a table.
+I coded a project by using SpringBoot simplify <strong> QueryDSl </strong> concept that is a framework which enables the construction of type-safe SQL, instead of writing queries as inline strings or externalizing them into XML files they are constructed via a fluent API, besid <strong> Projection </strong> concept is defined as taking a vertical subset from the columns of a single table that retains the unique rows. This kind of SELECT statement returns some of the columns and all the rows in a table.
  <br>
  
 ## Usages
@@ -97,7 +97,7 @@ spring.jpa.show-sql=true
  ## Let's Start :mechanical_arm:
 ### • Query Results of Employee
 
-##### :pencil2: `This query comparing employee name that is sending with employees name that is stored in database and then get employee information.` 
+##### :pencil2: `This query compares employee name that is sending with employees name which stored in database and then get employee information.` 
 
 ###### Code :computer:
 
@@ -126,7 +126,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query get jops name infrequently.` 
+##### :pencil2: `This query gets jop names infrequently.` 
 
 ###### Code :computer:
 
@@ -155,7 +155,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query multiply current salary of employee with 15% and show employees name and new salary increase.`
+##### :pencil2: `This query multiply current salary of employee with 15% and show employee names and new salary increasement.`
 
 ###### Code :computer:
 
@@ -200,7 +200,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query get employees who's not belong to this department number by comparing with other departments number which is sending and bringing them all, except employees who's under this department number.`
+##### :pencil2: `This query gets employees who dosen't belong to this department number by comparing with other departments number which is sending and bringing them all, except employees who's under this department number.`
 
 ###### Code :computer:
 
@@ -361,7 +361,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query count every employees under each manager, where compare employee's manager id with employee number then arrange identical employee number and name without repetition, then show employee number, name, jop name, and how many employees under this manager.`
+##### :pencil2: `This query counts every employees under each manager, where compare employee's manager id with employee number then arrange identical employee number and name without repetition, then show employee number, name, jop name, and how many employees under this manager.`
 
 
 ###### Code :computer:
@@ -409,7 +409,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches employee number based on manager name that sending and then compare this employee number which cames with managerId of employees and then show employees information under this manager.` 
+##### :pencil2: `This query fetches employee number based on manager name that sending and then comparing this employee number which cames with managerId of employees and then show employees information under this manager.` 
 
 ###### Code :computer:
 
@@ -453,7 +453,7 @@ spring.jpa.show-sql=true
 
 ### • Query Results of Department
 
-##### :pencil2: `This query comparing department name that is sending with department name that is stored in database and then get department information.` 
+##### :pencil2: `This query compares department name that is sending with department name which stored in database and then get department information.` 
 
 ###### Code :computer:
 
