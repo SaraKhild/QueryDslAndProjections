@@ -234,7 +234,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query brings employees information whoe's been hired before year that's senfing.`
+##### :pencil2: `This query brings employees information whoe's been hired before year that's sending.`
 
 ###### Code :computer:
 
@@ -270,7 +270,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query fetches employee number, employee name, department number, department name <br> where department number on employee equal department number on department.`
+##### :pencil2: `This query fetches employee number, employee name, department number and department name where department number on employee equal department number on department.`
 
 
 ###### Code :computer:
@@ -321,7 +321,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query calculates the employee average salary and then <br> fetches employee name and jop name which it's greater than this salary average.`
+##### :pencil2: `This query calculates the employee average salary and then fetches employee name and jop name which it's greater than this salary average.`
 
 ###### Code :computer:
 
@@ -407,9 +407,8 @@ spring.jpa.show-sql=true
 
 ---
 
-<br>
 
-##### :pencil2: `This query fetches employee number based on manager name that sending and then <br> compare this employee number which cames with managerId of employees and then show employees information under this manager.` 
+##### :pencil2: `This query fetches employee number based on manager name that sending and then compare this employee number which cames with managerId of employees and then show employees information under this manager.` 
 
 ###### Code :computer:
 
