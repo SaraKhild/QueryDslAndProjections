@@ -120,7 +120,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="employeeWithName" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/84135306-7752-4e68-b951-a9d23d5737c0">
+<img width="1200" alt="Find By Name" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/84135306-7752-4e68-b951-a9d23d5737c0">
 
 ---
 
@@ -149,7 +149,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/9716ee0e-b951-4621-b62f-112dfa0a55a9">
+<img width="1200" alt="Get Unique Job Name" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/9716ee0e-b951-4621-b62f-112dfa0a55a9">
 
 ---
 
@@ -189,12 +189,12 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="employee4part1" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c97aafcf-6088-4abd-a74b-9f65de55801d" hapace="20">
+<img width="1200" alt="Get Employee Name With Increased Salary" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c97aafcf-6088-4abd-a74b-9f65de55801d" hapace="20">
 
 <br>
 <br>
 
-<img width="931" alt="employee4part2" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/0228b502-c3c2-4d20-9b6a-ba16d4f718b0">
+<img width="931" alt="Get Employee Name With Increased Salary" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/0228b502-c3c2-4d20-9b6a-ba16d4f718b0">
 
 ---
 
@@ -223,12 +223,12 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="employee2part1" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c8fe1b9f-23a8-4d04-9d16-3aec50544df5" haspace="20">
+<img width="1200" alt="Get Employee Not Belong To Department" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c8fe1b9f-23a8-4d04-9d16-3aec50544df5" haspace="20">
 
 <br>
 <br>
 
-<img width="1200" alt="employee2part2-done" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/91c9080c-4737-4f60-8eff-84c67b001d3e">
+<img width="1200" alt="Get Employee Not Belong To Department" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/91c9080c-4737-4f60-8eff-84c67b001d3e">
 
 ---
 
@@ -259,12 +259,12 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="employee3part1" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/ba72a8cd-1599-44b6-b8bb-ff7f285fae41" hapace="20">
+<img width="1200" alt="Get Employee Who's Joined Before" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/ba72a8cd-1599-44b6-b8bb-ff7f285fae41" hapace="20">
 
 <br>
 <br>
 
-<img width="1200" alt="employee3part2" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/1258a234-c6fd-4637-92d8-63f3ca34da15">
+<img width="1200" alt="Employee Who's Joined Before" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/1258a234-c6fd-4637-92d8-63f3ca34da15">
 
 ---
 
@@ -304,17 +304,17 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="emWithdepartment1" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/5e748fc1-2e8b-400c-9b00-dd6a4acd8128" hapace="20">
+<img width="1200" alt="Get Employee With Department" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/5e748fc1-2e8b-400c-9b00-dd6a4acd8128" hapace="20">
 
 <br>
 <br>
 
-<img width="1200" alt="emWithdepartment2" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/f53f750c-73f6-4815-87be-411b54090c72" hapace="20">
+<img width="1200" alt="Get Employee With Department" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/f53f750c-73f6-4815-87be-411b54090c72" hapace="20">
 
 <br>
 <br>
 
-<img width="1200" alt="emWithdepartment3" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/e1265e5a-9997-429b-8cf5-e93c37026c11">
+<img width="1200" alt="Get Employee With Department" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/e1265e5a-9997-429b-8cf5-e93c37026c11">
 
 
 ---
@@ -350,12 +350,12 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="employee5part1" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c5429e1b-c931-45b5-a619-f9de13ada800" haspace="20">
+<img width="1200" alt="Get Employee Who's Salary Is Greater Than The Average Salary Of All Employees" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c5429e1b-c931-45b5-a619-f9de13ada800" haspace="20">
 
 <br>
 <br>
 
-<img width="1200" alt="employee5part2" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c307f6c1-e7d8-4c10-ba26-1e5932864006">
+<img width="1200" alt="Get Employee Who's Salary Is Greater Than The Average Salary Of All Employees" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c307f6c1-e7d8-4c10-ba26-1e5932864006">
 
 ---
 
@@ -397,16 +397,17 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="count1" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/4881bdbb-2783-45bc-8a11-8e04699bfdee"
+<img width="1200" alt="Count All Employees Under Each Manager" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/4881bdbb-2783-45bc-8a11-8e04699bfdee"
      haspace="20">
 
 <br>
 <br>
 
-<img width="1200" alt="count3" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/409486d3-2e2f-4425-bf76-07a297573856">
+<img width="1200" alt="Count All Employees Under Each Manager" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/5f09a1b4-2679-46ac-931b-6de1b851e145">
 
 ---
 
+<br>
 
 ##### :pencil2: `This query fetches employee number based on manager name that sending and then compare this employee number which cames with managerId of employees and then show employees information under this manager.` 
 
@@ -439,7 +440,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="employee7" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/40415bde-cd29-4616-ba99-663e23822fd9" haspace="20">
+<img width="1200" alt="Get Employees Whose Under Manager Name" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/40415bde-cd29-4616-ba99-663e23822fd9" haspace="20">
 
 <br>
 <br>
@@ -478,7 +479,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="departmentbyname" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/43306b6a-62c4-4a6f-9dca-81c3ccf4a581">
+<img width="1200" alt="Find By Name" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/43306b6a-62c4-4a6f-9dca-81c3ccf4a581">
 
 <br>
 
@@ -513,7 +514,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="department4" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/593455fc-4a15-4cba-82c4-c3e53f311f27">
+<img width="1200" alt="Find All Departments That Is Not Include This DepartmentNo" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/593455fc-4a15-4cba-82c4-c3e53f311f27">
 
 <br>
 
@@ -548,7 +549,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="department5" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c45f6969-e25b-4635-8f76-f6e3dadd4090">
+<img width="1200" alt="Find All Departments That Employees Not Included" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/c45f6969-e25b-4635-8f76-f6e3dadd4090">
 
 <br>
 
@@ -558,7 +559,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query gets departments which have at lest two employees, that compares department number that's in department table with department number of employee in employee table then arrange identical departments number and name, then count how many employee in this department which will be gereater than or equal two.`
+##### :pencil2: `This query gets departments which have at lest two employees, that compares department number that's in department table with department number of employee in employee table then arrange identical departments number, name without repetition, then count how many employee in this department which will be greater than or equal two.`
 
 ###### Code :computer:
 
@@ -590,7 +591,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-<img width="1200" alt="department6" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/b379916a-730f-4833-8ef9-f92d5ece839a">
+<img width="1200" alt="Find Departments Have At Least Two Employees" src="https://github.com/SaraKhild/QueryDslAndProjections/assets/67427643/b379916a-730f-4833-8ef9-f92d5ece839a">
 
 <br>
 
