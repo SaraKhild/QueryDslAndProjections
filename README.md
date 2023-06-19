@@ -126,7 +126,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query gets jop names infrequently.` 
+##### :pencil2: `This query gets job names infrequently.` 
 
 ###### Code :computer:
 
@@ -321,7 +321,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query calculates the employee average salary and then fetches employee name and jop name which it's greater than this salary average.`
+##### :pencil2: `This query calculates the employee average salary and then fetches employee name and job name which it's greater than this salary average.`
 
 ###### Code :computer:
 
@@ -361,7 +361,7 @@ spring.jpa.show-sql=true
 
 <br>
 
-##### :pencil2: `This query counts every employees under each manager, where compare employee's manager id with employee number then arrange identical employee number and name without repetition, then show employee number, name, jop name, and how many employees under this manager.`
+##### :pencil2: `This query counts every employees under each manager, where compare employee's manager id with employee number then arrange identical employee number and name without repetition, then show employee number, name, job name, and how many employees under this manager.`
 
 
 ###### Code :computer:
