@@ -6,7 +6,7 @@ I coded a project by using SpringBoot simplify <strong> QueryDSl </strong> conce
  <br>
  
 ## Usages
-- SpringBoot
+-  SpringBoot
 -  QueryDSL
 -  Procjection
 -  MySQL
